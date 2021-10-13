@@ -36,9 +36,9 @@ int main(int argC, char *argV[]){
         for(size_t i = 0; i < tests.size(); ++i){
             printf("%lu) %s \n", i + 1, tests[i].c_str());
             printf("Naive search\n");
-            print_top(my_search.search(tests[i], false));
-            printf("Stream search\n");
             print_top(my_search.search(tests[i], true));
+            printf("Stream search\n");
+            print_top(my_search.search(tests[i], false));
         }
         printf("====================================\n");
         my_search.printInfo();
