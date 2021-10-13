@@ -6,4 +6,4 @@ test:
 	./test test
 
 clean:
-	rm -f *.o main
+	rm -f *.o main clean
