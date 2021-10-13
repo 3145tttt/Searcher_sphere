@@ -18,7 +18,7 @@ void print_top(std::vector<std::string> s, size_t n = 5){
         printf("Sorry, vector is empty :(\n");
         return;
     }
-
+    printf("%lu\n", s.size());
     for(size_t i = 0; i < s.size() && i < n; ++i){
         printf("%lu) %s\n", i + 1, s[i].c_str());
     }
